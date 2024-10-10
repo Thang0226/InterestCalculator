@@ -14,6 +14,7 @@ public class Interest {
         for(int i = 0; i < month; i++){
             totalInterest += money * (interestRate/100)/12;
         }
+        totalInterest = Math.round(totalInterest * 1000.0) / 1000.0;
 
         System.out.println("Total of interest: " + totalInterest);
     }
